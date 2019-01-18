@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Table from './main/rows/Table';
+
+// async function getData(){
+//   var data = "./main/assets/MOCK_DATA1.json"
+//   return fetch(data);
+// }
 
 class App extends Component {
+
+    state = {data : {}}
+
+    componentWillMount() {
+      // fetch("./main/assets/MOCK_DATA1.json").then(data => console.log(data))
+      var th = require("./main/assets/MOCK_DATA1.json")
+      this.setState({data: th})
+    }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Table data={this.state.data} />
       </div>
     );
   }
