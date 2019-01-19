@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 function generateBars(imp){
   var arr = []
   switch(imp){
-    case 0:
+    default:
       arr.push(<td className="small" style={{backgroundColor: '#000'}}/>)
       arr.push(<td className="medium" style={{backgroundColor: '#000'}}/>)
       arr.push(<td className="big" style={{backgroundColor: '#000'}}/>)
@@ -40,9 +40,13 @@ class Row extends Component {
   render() {
     return (
       <td>
-      <tr className="mainVertical">
-        {generateBars(this.props.bars)}
-      </tr>
+        <table>
+          <tbody>
+            <tr className="mainVertical">
+              {generateBars(this.props.bars)}
+            </tr>
+          </tbody>
+        </table>
       </td>
     );
   }

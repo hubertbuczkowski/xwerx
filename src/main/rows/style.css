@@ -1,8 +1,8 @@
 table{
-  margin: 10px;
   background-color: #5BB591;
-  border-radius: 5px;
+  border-radius: 5px 5px 0px 0px;
   border-collapse: collapse;
+  width: 100%;
 }
 
 td {
@@ -14,6 +14,8 @@ td {
   vertical-align:bottom;
   justify-content: right;
   border: none;
+  display: inline-block;
+  float: right;
 }
 
 td .vertical{
@@ -31,9 +33,14 @@ td .vertical:first-child{
   font-weight: 900;
 }
 
+tr:first-child{
+  border-width: 1px 0;
+  border-color: #7BC6A7;
+  margin: 30px;
+}
 tr{
   border: solid;
-  border-width: 2px 0;
+  border-width: 1px 0;
   border-color: #7BC6A7;
   margin: 30px;
 }
@@ -59,18 +66,74 @@ tr{
     border-radius: 1px;
 }
 
-.button{
+div .button{
   width: 40px;
   height: 40px;
   border-radius: 5px;
   background-color: #7cc6a7;
 }
 
-.button:hover{
+div .button:hover{
   background-color: #379d73;
 }
-img{
+.buttonImg{
   width: 60%;
   height: 60%;
   padding: calc(40%/2);
+}
+
+.headerImg{
+  width: 13px;
+  height: 13px;
+}
+
+.headerImg:hover{
+  filter: contrast(0%);
+}
+
+.save{
+  float: right;
+  text-align: center;
+  padding: 7px 20px;
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: #7cc6a7;
+}
+
+.save:hover{
+  color: #808080;
+  border-color: #808080;
+}
+
+.outerHeader{
+  float: right;
+}
+
+.outer{
+  background-color: #5BB591;
+  border-radius: 0px 0px 5px 5px;
+  color: white;
+  padding: 0px 20px 20px 20px;
+}
+
+.seeMore{
+  background-color: #7BC6A7;
+  text-align: center;
+  padding: 5px;
+  width: 15%;
+  margin: 0 auto;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.viewAll{
+  width: fit-content;
+}
+
+.seeMore:hover{
+  color: #808080;
+  background-color: #379d73;
+}
+
+.viewAll:hover{
+  color: #808080;
 }

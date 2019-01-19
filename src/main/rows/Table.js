@@ -5,7 +5,6 @@ import Footer from './Footer'
 import './style.css'
 
 function createRow(row){
-  // console.log(row)
   return <Row key={row.id} rowData={row} />
 }
 
@@ -17,15 +16,21 @@ function empty(){
   )
 }
 
-function createTable(data){
+function createTable(data, from, to){
   var arr = [];
-  if(data == null)
-  {
+  if(data == null){
     return empty()
   }
-  data.forEach(x => {
-    arr.push(createRow(x))
-  })
+  if(to > 0){
+    for(var i = from; i<=to; i++){
+      arr.push(createRow(data[i]))
+    }
+  }
+  else{
+    data.forEach(x => {
+      arr.push(createRow(x))
+    })
+  }
   return arr;
 }
 
@@ -37,13 +42,17 @@ class Table extends Component {
 
   render() {
     return (
-      <table>
-      <tbody>
-        <Header/>
-        {createTable(this.props.data)}
+      <div style={{margin:"15px"}}>
+        <table>
+          <tbody>
+            <Header/>
+            {createTable(this.props.data, 0, 4)}
+          </tbody>
+        </table>
         <Footer/>
-      </tbody>
-      </table>
+
+      </div>
+
     );
   }
 }

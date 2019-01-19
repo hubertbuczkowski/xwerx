@@ -1,0 +1,93 @@
+.main{
+  background-color: #4b545d;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.progress{
+  position: relative;
+  float:left;
+  text-align: center;
+  margin-bottom: 2px;
+  height: 90px
+}
+.barOverflow{ /* Wraps the rotating .bar */
+  position: relative;
+  overflow: hidden; /* Comment this line to understand the trick */
+  width: 180px; height: 90px; /* Half circle (overflow) */
+  margin-bottom: -14px;
+}
+.bar{
+  position: absolute;
+  top: 0; left: 0;
+  width: 180px; height: 180px; /* full circle! */
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 30px solid #596169;     /* half gray, */
+  border-bottom-color: #67a3e7;  /* half azure */
+  border-right-color: #67a3e7;
+}
+
+.active{
+  color: #67a3e7;
+  font-size: 30px;
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.activeClients{
+  text-align: center;
+  color: #d2d3d4;
+  width: 180px;
+  font-size: 13px;
+  width: 100%
+}
+
+.progressBar{
+  height: 70px;
+  width: 5px;
+  border-radius: 25px;
+  background-color: #596169;
+  position: relative;
+  transform: rotate(180deg);
+
+}
+
+.filler{
+  background-color: #67a3e7;
+  width: 100%;
+  border-radius: inherit;
+  vertical-align: bottom;
+}
+
+table.charts {
+  background-color: inherit;
+}
+table.charts tr
+ {
+  border: inherit
+}
+table.charts tr td
+{
+}
+
+#charts.charts tr td{
+  padding: 15px 0px;
+  width: 1px;
+
+}
+
+.arrow{
+  font-size: 10px;
+  color: #67a3e7;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.clients{
+  text-align: center;
+}

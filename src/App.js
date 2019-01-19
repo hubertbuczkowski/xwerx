@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Table from './main/rows/Table';
+import Main from './/main/top_bar/Main';
 
 // async function getData(){
 //   var data = "./main/assets/MOCK_DATA1.json"
@@ -19,6 +20,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Main/>
         <Table data={this.state.data} />
       </div>
     );
