@@ -14,7 +14,7 @@ class Main extends Component {
         <div className="top">
         </div>
         <div>
-          <table className="charts" >
+          <table className="charts topChart" >
             <tbody>
               <tr>
                 <Semicircular/>

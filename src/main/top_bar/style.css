@@ -2,6 +2,13 @@
   background-color: #4b545d;
   margin: 15px;
   border-radius: 5px;
+  padding: 40px 0;
+}
+
+.topChart
+{
+  display: table;
+   table-layout: fixed;
 }
 
 .progress{
@@ -41,9 +48,12 @@
 .activeClients{
   text-align: center;
   color: #d2d3d4;
-  width: 180px;
   font-size: 13px;
   width: 100%
+}
+
+.semi{
+  width: 180px;
 }
 
 .progressBar{

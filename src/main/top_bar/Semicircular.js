@@ -7,10 +7,10 @@ class Semicircular extends Component {
 
   render() {
     return (
-      <td><table className="charts">
+      <td style={{paddingLeft: 0}}><table className="charts" style={{width: "200px", margin: '0 auto'}}>
         <tbody>
           <tr>
-            <td>
+            <td style={{align: 'center'}}>
               <div class="progress">
                   <div class="barOverflow">
                     <div class="bar" style={{transform: "rotate("+ (45+((clients/total)*180)) +"deg)"}}></div>
@@ -20,7 +20,7 @@ class Semicircular extends Component {
             </tr>
             <tr>
               <td>
-                <div className="activeClients">
+                <div className="activeClients semi">
                   ACTIVE CLIENTS
                 </div>
               </td>
