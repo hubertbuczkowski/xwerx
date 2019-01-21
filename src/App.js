@@ -19,7 +19,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{width:'100%', minWidth: '624px'}}>
         <Main/>
         <Table data={this.state.data} />
       </div>

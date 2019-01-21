@@ -42,7 +42,7 @@ class Table extends Component {
 
   render() {
     return (
-      <div style={{margin:"15px"}}>
+      <div className='container'>
         <table>
           <tbody>
             <Header/>

@@ -7,7 +7,7 @@ class Semicircular extends Component {
 
   render() {
     return (
-      <td><table className="charts" style={{width: "260px", margin: '0 auto'}}>
+      <td style={{padding: '10px 0 0 0'}}><table className="charts" style={{width: "260px", margin: '0 auto'}}>
         <tbody>
           <tr>
             <td style={{align: 'center'}}>

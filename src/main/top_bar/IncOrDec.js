@@ -14,7 +14,7 @@ class IncOrDec extends Component {
     return (
       <td>
         <div >
-          <div style={{height: '80px', position: 'relative'}}>
+          <div style={{height: '80px', width: '90px', position: 'relative'}}>
             <div className="arrow">&#9650;</div>
             <div className="active clients" >{clients}</div>
           </div>

@@ -1,8 +1,13 @@
 .main{
   background-color: #4b545d;
-  margin: 15px;
   border-radius: 5px;
   padding: 20px 0;
+}
+
+.container{
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .topChart
@@ -82,6 +87,7 @@ table.charts {
   background-color: inherit;
   border-collapse: collapse;
   width: 100%;
+  table-layout: auto;
 }
 table.charts tr
  {
@@ -90,7 +96,7 @@ table.charts tr
 table.charts tr td
 {
   vertical-align: bottom;
-  padding: 10px 5px 0px 5px;
+  padding: 10px 25px 0px 25px;
   border-collapse: collapse;
 
 }
@@ -109,8 +115,11 @@ table.charts tr td:last-of-type
 
 
 #charts.charts tr td{
-  width: 1px;
-
+  border-collapse: collapse;
+  width: 100%;
+  width:1%;
+  white-space: fit-content;
+  padding: 0 1px 0 1px;
 }
 
 .arrow{
@@ -128,11 +137,13 @@ table.charts tr td:last-of-type
 
 .top{
   float: right;
-  padding-right: 30px;
+  padding-right: 5px;
+  filter: contrast(0%);
+
 }
 
 .top:hover{
-  filter: contrast(0%);
+  filter: contrast(100%);
 }
 
 table.charts tr td.clientsTop{

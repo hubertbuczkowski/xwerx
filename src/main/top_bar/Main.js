@@ -11,8 +11,8 @@ class Main extends Component {
 
   render() {
     return (
-      <div className="main">
-        <div className="top">
+      <div className="main container">
+        <div >
         </div>
         <div>
           <table className="charts topChart" >
