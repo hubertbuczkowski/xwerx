@@ -4,15 +4,24 @@ import filter from "../assets/filter.png"
 import restore from "../assets/restore.png"
 import settings from "../assets/settings.png"
 
-
-
-var x=41;
+var x = 41;
 
 class Header extends Component {
+
+  state
   componentDidMount(){
+
   }
 
   render() {
+    var arrow;
+    if(this.props.ord === 'asc')
+    {
+      arrow = String.fromCharCode(9660);
+    }
+    else {
+      arrow = String.fromCharCode(9650)
+    }
     return (
       <tr style={{border:'0'}}>
         <td colSpan="2" style={{verticalAlign: 'top', padding:0}}>
@@ -32,7 +41,9 @@ class Header extends Component {
                   <td><div className="save">SAVE &#x25BC;</div></td>
                   </tr>
                   <tr style={{border: 0}}>
-                  <td colSpan="5" className="importance" ><div>IMPORTANCE &#x25BC;</div></td>
+                  <td colSpan="5">
+                    <div onClick={() => this.props.order()} className="importance" style={{width: 'fit-content', float: 'right'}}>IMPORTANCE {arrow}</div>
+                  </td>
                 </tr>
               </tbody>
             </table>

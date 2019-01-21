@@ -141,6 +141,10 @@ div .button:hover{
 .importance{
   text-align:right;
   padding: 0 15px 0 0px;
+  width: fit-content;
+  float: right;
+  font-weight: 900;
+  font-size: 12px;
 }
 
 .importance:hover{

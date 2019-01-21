@@ -1,21 +1,26 @@
 import React, { Component } from 'react';
 import './style.css';
 
-
-var inc = "Increase"
-
-
-var clients = 203;
-var total = 250;
-
 class IncOrDec extends Component {
 
   render() {
+    var current = this.props.thisMonth;
+    var previous = this.props.previousMonth;
+    var arrow;
+    var inc;
+    if(current>previous)
+    {
+      arrow = String.fromCharCode(9650);
+    }
+    else {
+      arrow = String.fromCharCode(9660);
+    }
+    var clients = current-previous;
     return (
       <td>
         <div >
           <div style={{height: '80px', width: '90px', position: 'relative'}}>
-            <div className="arrow">&#9650;</div>
+            <div className="arrow">{arrow}</div>
             <div className="active clients" >{clients}</div>
           </div>
         </div>
