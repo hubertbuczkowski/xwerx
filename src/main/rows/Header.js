@@ -32,7 +32,7 @@ class Header extends Component {
                   <td><div className="save">SAVE &#x25BC;</div></td>
                   </tr>
                   <tr style={{border: 0}}>
-                  <td colSpan="5" style={{ textAlign:'right', padding: "0 15px 0 0px"}}><div>IMPORTANCE &#x25BC;</div></td>
+                  <td colSpan="5" className="importance" ><div>IMPORTANCE &#x25BC;</div></td>
                 </tr>
               </tbody>
             </table>

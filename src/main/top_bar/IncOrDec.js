@@ -12,13 +12,12 @@ class IncOrDec extends Component {
 
   render() {
     return (
-      <td >
+      <td>
         <div >
-          <div style={{height: '70px', padding: '15px', position: 'relative'}}>
+          <div style={{height: '80px', position: 'relative'}}>
             <div className="arrow">&#9650;</div>
             <div className="active clients" >{clients}</div>
           </div>
-            <div className="activeClients"style={{padding: '15px 0'}}>{inc}</div>
         </div>
       </td>
     );

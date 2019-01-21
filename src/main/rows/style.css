@@ -137,3 +137,12 @@ div .button:hover{
 .viewAll:hover{
   color: #808080;
 }
+
+.importance{
+  text-align:right;
+  padding: 0 15px 0 0px;
+}
+
+.importance:hover{
+  color: #808080;
+}

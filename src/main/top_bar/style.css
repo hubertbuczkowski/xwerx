@@ -2,13 +2,14 @@
   background-color: #4b545d;
   margin: 15px;
   border-radius: 5px;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .topChart
 {
   display: table;
    table-layout: fixed;
+   width: 100%;
 }
 
 .progress{
@@ -16,28 +17,34 @@
   float:left;
   text-align: center;
   margin-bottom: 2px;
-  height: 90px
+  height: 130px
 }
 .barOverflow{ /* Wraps the rotating .bar */
   position: relative;
   overflow: hidden; /* Comment this line to understand the trick */
-  width: 180px; height: 90px; /* Half circle (overflow) */
-  margin-bottom: -14px;
+  width: 260px; height: 130px; /* Half circle (overflow) */
+  margin-bottom: 14px;
 }
 .bar{
   position: absolute;
   top: 0; left: 0;
-  width: 180px; height: 180px; /* full circle! */
+  width: 260px; height: 260px; /* full circle! */
   border-radius: 50%;
   box-sizing: border-box;
-  border: 30px solid #596169;     /* half gray, */
+  border: 40px solid #596169;     /* half gray, */
   border-bottom-color: #67a3e7;  /* half azure */
   border-right-color: #67a3e7;
 }
 
+.semi{
+  width: 220px;
+}
+
 .active{
   color: #67a3e7;
-  font-size: 30px;
+  font-weight: lighter;
+  font-size: 50px;
+  height: 48px;
   position:absolute;
   bottom: 0;
   left: 0;
@@ -49,43 +56,59 @@
   text-align: center;
   color: #d2d3d4;
   font-size: 13px;
-  width: 100%
+  width: 100%;
+  margin-top: 10px;
 }
 
-.semi{
-  width: 180px;
-}
+
 
 .progressBar{
-  height: 70px;
+  height: 80px;
   width: 5px;
-  border-radius: 25px;
   background-color: #596169;
   position: relative;
   transform: rotate(180deg);
-
+  margin-bottom: 2px;
 }
 
 .filler{
   background-color: #67a3e7;
   width: 100%;
-  border-radius: inherit;
+  border-radius: 0 0 50px 50px;
   vertical-align: bottom;
 }
 
 table.charts {
   background-color: inherit;
+  border-collapse: collapse;
+  width: 100%;
 }
 table.charts tr
  {
-  border: inherit
+  border: inherit;
 }
 table.charts tr td
 {
+  vertical-align: bottom;
+  padding: 10px 5px 0px 5px;
+  border-collapse: collapse;
+
 }
 
+table.charts tr td:first-of-type
+{
+  width: 260px;
+
+}
+
+table.charts tr td:last-of-type
+{
+  width: 80px;
+
+}
+
+
 #charts.charts tr td{
-  padding: 15px 0px;
   width: 1px;
 
 }
@@ -100,4 +123,20 @@ table.charts tr td
 
 .clients{
   text-align: center;
+  padding-bottom: 2px;
+}
+
+.top{
+  float: right;
+  padding-right: 30px;
+}
+
+.top:hover{
+  filter: contrast(0%);
+}
+
+table.charts tr td.clientsTop{
+  color: #67a3e7;
+  font-weight: 500;
+  padding-left: 30px;
 }

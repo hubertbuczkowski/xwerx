@@ -26,9 +26,6 @@ class Chart extends Component {
               <td><ProgressBar progress={80}/></td>
               <td><ProgressBar progress={90}/></td>
             </tr>
-            <tr>
-            <td colSpan="12>" ><div className="activeClients">LAST 12 MONTHS</div></td>
-            </tr>
           </tbody>
         </table>
       </td>
